@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Магазин футболок</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" type="text/CSS" href="style.css">
+
+
+        <script src="js/script.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+        <script src="js/wowmin.js"></script>
+
+        <script>
+            new WOW().init();
+        </script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+        <script src="js/lightzoom.js"></script>
+
+        <link rel="stylesheet" href="lightzoom/style.css" type="text/css">
+    </head>
+
+    <body style="background-color: gray;">
+        <div class="page">
+
+            <header>
+
+                <div class="centered">
+                    <div class="text_top animate__animated animate__swing">
+                        <b><font size="5">ФУТБОЛКИ С ПРИНТАМИ</font></b> <br>
+
+                        <font color="red" size="7">
+                            <b>
+                                499<sup> <font size="5">руб.</font> </sup>
+                            </b> <br>
+                        </font>
+                    </div>
+
+                    <div class="pochemy">
+                        ПОЧЕМУ ТАК ДЁШЕВО?
+                    </div> <br>
+
+                    <div class="header__images">
+                        <div>
+                            <img height="60px" width="90px" src="image/sale.png"> <br>
+                            <font>Низкие цены</font>
+                        </div>
+
+                        <div class="gfr">
+                            <img height="60px" width="90px" src="image/gruzovik.png"> <br>
+                            <font>Доставка по всей России</font>
+                        </div>
+
+                        <div>
+                            <img height="60px" width="90px" src="image/hit.png"> <br>
+                            <font>Только хиты</font>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+
+            <main>
+                <section class="centered">
+                    <div class="animate__animated animate__wobble">
+                        <b> <font size="6">ФУТБОЛКИ</font> </b> <br>
+                        <font size="3">100% хлопок</font>
+                    </div>
+
+                    <div class="shirt">
+                        <div>
+                            <img class="strelka1" src="image/left.png" width="50px" onclick="rand_tshirt()">
+                        </div>
+
+                        <div style="margin-right:15px;" class="tshirt_1">
+                            <img class="oldshirt" width="500px" height="400px" id="ts_1" src="image/photo.png"> <br>
+                            <b> <font size="3" id="text1">Футболка</font> </b> <br>
+                            <b> <font size="4" color="red">499р</font> </b> <br> 
+                        </div>
+
+                        <div class="tshirt_1">
+                            <img class="oldshirt" width="500px" height="400px" id="ts_2" src="image/photo.png"> <br>
+                            <b> <font size="3" id="text1">Футболка</font> </b> <br>
+                            <b> <font size="4" color="red">499р</font> </b> <br>
+                        </div>
+
+                        <div>
+                            <img class="strelka2" src="image/right.PNG" width="50px" onclick="rand_tshirt()">
+                        </div>
+                </section>
+
+                <!-- <section>
+                    <center class="newjacket"> <font>ПОСТУПИЛА НОВАЯ МОДНАЯ ОДЕЖДА ЗА 999 РУБЛЕЙ</font> </center> <br>
+                    <div class="newshirt">
+                        <div>
+                            <div>
+                                <img height="800px" width="700px" src="image/futbolka-brendy.jpg">
+                            </div>
+
+                            <button id="button2" mouseover="alert('Вы добавили в заказ')" class="buttonik">ДОБАВИТЬ В ЗАКАЗ</button> <br>
+                        </div>
+
+                        <div>
+                            <div>
+                                <img height="800px" width="700px" src="image/futbolki-blacknwhite.jpg">
+                            </div>  
+
+                            <button id="button2" mouseover="alert('Вы добавили в заказ')" class="buttonik">ДОБАВИТЬ В ЗАКАЗ</button> <br>
+                        </div>
+
+                        <div>
+                            <div>
+                                <img height="800px" width="700px" src="image/mysterio_gaze.jpg">
+                            </div>  
+
+                            <button id="button2" mouseover="alert('Вы добавили в заказ')" class="buttonik">ДОБАВИТЬ В ЗАКАЗ</button> <br>
+                        </div>
+
+                        <div>
+                            <div>
+                                <img height="800px" width="700px" src="image/6184664465.jpg">
+                            </div>  
+
+                            <button id="button2" mouseover="alert('Вы добавили в заказ')" class="buttonik">ДОБАВИТЬ В ЗАКАЗ</button> <br>
+                        </div>
+                    </div>
+                </section> -->
+
+                <div class="kak">
+                    <font>КАК ВЫБРАТЬ РАЗМЕР?</font>
+                </div>
+
+                <section class="blueshirt">
+                    <div class="dvadiva">
+                        <div>
+                            <img class="blueshirtv2" style="border: 2px solid black;" src="image/photo2.png"> <br>
+                            <font style="font-size: 20px; font-weight: bolder; color: white">Футболка</font> <br>
+                            <font style="color: red; font-weight: bolder; font-size: 20px;">499 Р</font> <br>
+                            <button id="button1" mouseover="alert('Вы добавили в заказ')" class="buttonik">ДОБАВИТЬ В ЗАКАЗ</button> <br>
+                        </div>
+                        
+                        <div style="margin-left: 20px; margin-right: 20px;">
+                            <img class="blueshirtv2" style="border: 2px solid black;" src="image/photo2.png"> <br>
+                            <font style="font-size: 20px; font-weight: bolder; color: white">Футболка</font> <br>
+                            <font color="red">499 Р</font> <br>
+                            <button id="button2" mouseover="alert('Вы добавили в заказ')" class="buttonik">ДОБАВИТЬ В ЗАКАЗ</button> <br>
+                        </div>
+
+                        <div>
+                            <img class="blueshirtv2" style="border: 2px solid black;" src="image/photo2.png"> <br>
+                            <font style="font-size: 20px; font-weight: bolder; color: white">Футболка</font> <br>
+                            <font color="red">499 Р</font> <br>
+                            <button id="button3" mouseover="alert('Вы добавили в заказ')" class="buttonik">ДОБАВИТЬ В ЗАКАЗ</button> <br>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="blueshirt" style="margin-top:20px">
+                    <div class="dvadiva">
+                        <div>
+                            <img class="blueshirtv2" style="border: 2px solid black;" src="image/photo2.png"> <br>
+                            <font id="text1" style="font-size: 20px; font-weight: bolder; color: white">Футболка</font> <br>
+                            <font color="red">499 Р</font> <br>
+                            <button id="button4" mouseover="alert('Вы добавили в заказ')" class="buttonik">ДОБАВИТЬ В ЗАКАЗ</button> <br>
+                        </div>
+                        
+                        <div style="margin-left: 20px; margin-right: 20px;">
+                            <img class="blueshirtv2" style="border: 2px solid black;" src="image/photo2.png"> <br>
+                            <font style="font-size: 20px; font-weight: bolder; color: white">Футболка</font> <br>
+                            <font color="red">499 Р</font> <br>
+                            <button id="button5" mouseover="alert('Вы добавили в заказ')" class="buttonik">ДОБАВИТЬ В ЗАКАЗ</button> <br>
+                        </div>
+
+                        <div>
+                            <img class="blueshirtv2" style="border: 2px solid black;" src="image/photo2.png"> <br>
+                            <font style="font-size: 20px; font-weight: bolder; color: white">Футболка</font> <br>
+                            <font color="red">499 Р</font> <br>
+                            <button id="button6" mouseover="alert('Вы добавили в заказ')" class="buttonik">ДОБАВИТЬ В ЗАКАЗ</button> <br>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="my_name_is_kira_yousikage">
+                    <div style="font-size:20px;">
+                        <font class="shrift" color="white">РОЗЫГРЫШ</font> <br>
+                        <font class="shrift" color="white">10.000 <b>руб.</b> </font> <br>
+                        <font class="shrift" color="yellow">СРЕДИ ОБЛАДАТЕЛЕЙ КУПОНОВ</font> <br>
+                        <font class="shrift" color="white">Вечером 1 июня команда розыграет приз в прямом эфире на аккунте @ghdjhgfgh.ru</font>
+                    </div>
+
+                    <div class="animate__animated animate__shakeX wow">
+                        <img class="money" src="image/money.jpg">
+                    </div>
+                </section>
+
+                <section style="margin-left: 20px; margin-right:20px; margin-top: 50px; text-align: center; color: white;">
+                    <div class="animate__animated animate__bounce wow">
+                        <b> <h3>ВАШ ЗАКАЗ</h3> </b>
+                    </div>
+
+                    <div style="background-color: rgb(100, 100, 100); padding:25px">
+                        <b> <font>Корзина пуста</font> </b> <br>
+                    </div>
+
+                    <div style="color:gray; margin-top: 20px">
+                        <font>В корзине пусто!</font>
+                    </div>
+                </section>
+
+                <section style="text-align:center">
+                    <div>
+                        <b> <h2>Оформление заказа</h2></b> <br>
+
+                        <b> <label>ИМЯ</label> </b> <br>
+                        <input id="input_name" placeholder="имя" class="input_text" type="text"> <br>
+                        <b> <label>ФАМИЛИЯ</label> </b> <br>
+
+                        <input id="input_fam" placeholder="фамилия" class="input_text" type="text"> <br>
+                        <b> <label>E-MAIL</label> </b> <br>
+
+                        <input id="input_mail" placeholder="почта" class="input_text" type="text"> <br>
+                        <b> <label>ТЕЛЕФОН <br>
+
+                        <input id="input_phone" placeholder="номер" class="input_text" type="text">
+                        <hr> <br>
+
+                        <b> <button onclick="valid_form()" class="buttonit">Перейти к заказу</button> </b> <br> <br>
+
+                        <span id="sp0"></span> <br>
+                        <span id="sp1"></span> <br>
+                        <span id="sp2"></span> <br>
+                        <span id="sp3"></span> <br>
+                    </div>
+                </section>
+
+                <div>
+                    <img class="podder" onclick="print_contact()" height="100px" width="100px" src="image/tp.png">
+                </div>
+
+                <div>
+                    <img class="podder1" onclick="alert('Вы активировали скиду 40%')" height="100px" width="150px" src="image/podarok.png">
+                </div>
+
+                <!-- <div class="anima">
+                    <font>Тестовый текст</font>
+                </div>
+
+                <div id="pct_1">
+                    Пример:
+                </div>
+
+                <div>
+                    <button class="create_button"
+                    onmouseover="on_enter()"
+                    onmouseleave="on_leave()"
+                    id="button1">ДОБАВИТЬ В ЗАКАЗ</button>
+                </div>
+
+                <div>
+                    <button class="creat_button" onmouseover="change_style()" onmouseleave="change_style()" id="button1">ДОБАВИТЬ В ЗАКАЗ</button>
+                </div> -->
+
+                <div id="myModal" class="modal">
+                    <div class="modal-content">
+                        <span onclick="show_modal()" class="close">&times;</span>
+                        <p>Некоторый текст в модальном....</p>
+                    </div>
+
+                </div>
+
+                <div style="margin-top: 50px; text-align: center; font-size: 25px; margin-bottom: 20px;">
+                    <font onclick="show_modal()">Условия доставки</font>
+                </div>
+
+                <section>
+                    <div class="stars">
+                        <img class="starimg" id="star_f_1" onmouseover="show_star(1)" src="image/star_2.png" width="50px" height="50px">
+                        <img class="starimg" id="star_f_2" onmouseover="show_star(2)" src="image/star_2.png" width="50px" height="50px">
+                        <img class="starimg" id="star_f_3" onmouseover="show_star(3)" src="image/star_2.png" width="50px" height="50px">
+                        <img class="starimg" id="star_f_4" onmouseover="show_star(4)" src="image/star_2.png" width="50px" height="50px">
+                        <img class="starimg" id="star_f_5" onmouseover="show_star(5)" src="image/star_2.png" width="50px" height="50px">
+                    </div>
+
+                    <div>
+                        <center> <font class="site" size="20px">Оставьте оценку сайта:</font> </center>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </body>
+
+</html>
